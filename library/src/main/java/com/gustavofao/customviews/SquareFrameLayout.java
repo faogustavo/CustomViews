@@ -4,18 +4,18 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.widget.FrameLayout;
 
-public class SquareRelativeLayout extends RelativeLayout {
+public class SquareFrameLayout extends FrameLayout {
 
     private int base;
 
-    public SquareRelativeLayout(Context context, AttributeSet attrs) {
+    public SquareFrameLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.init(context, attrs);
     }
 
-    public SquareRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public SquareFrameLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.init(context, attrs);
     }

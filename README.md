@@ -7,32 +7,32 @@ A short way to implement Square and Scaled view on android.
 Add this dependecy from jCenter:
 
 ``` groovy
-compile 'com.gustavofao:CustomViews:1.0'
+compile 'com.gustavofao:CustomViews:1.1'
 ```
 ## USAGE
 
 For a Square View:
 ``` xml
-<!-- Based on Width -->
-<com.gustavofao.customviews.SquareRelativeLayout
+<!-- Using Relative Layout -->
+<com.gustavofao.customviews.SquareFrameLayout
     android:id="@+id/Square"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/colorPrimaryDark"
     custom:base="width"/>
 
-<!-- Based on Height -->
-<com.gustavofao.customviews.SquareRelativeLayout
+<!-- Using Frame Layout -->
+<com.gustavofao.customviews.SquareFrameLayout
     android:id="@+id/Square"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/colorPrimaryDark"
-    custom:base="height"/>
+    custom:base="width"/>
 ```
 
 For a ScaledView:
 ``` xml
-<!-- Based on Width -->
+<!-- Using Relative Layout -->
 <com.gustavofao.customviews.ScaledRelativeLayout
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
@@ -41,15 +41,14 @@ For a ScaledView:
   custom:widthScale="16"
   android:background="@color/colorAccent"/>
 
-
-  <!-- Based on Height -->
-  <com.gustavofao.customviews.ScaledRelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    custom:base="height"
-    custom:heightScale="16"
-    custom:widthScale="9"
-    android:background="@color/colorAccent"/>
+<!-- Using Frame Layout -->
+<com.gustavofao.customviews.ScaledFrameLayout
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  custom:base="width"
+  custom:heightScale="9"
+  custom:widthScale="16"
+  android:background="@color/colorAccent"/>
 ```
 
 ## SAMPLE
@@ -62,6 +61,8 @@ This library test can be found on [this link](https://github.com/faogustavo/Cust
 ## UPDATES
 ### 1.0
 - Project start with SquareRelativeLayout and ScaledRelativeLayout.
+### 1.1
+- Added SquareFrameLayout and ScaledFrameLayout.
 
 ## License
     Copyright 2015 Gustavo Fão. All rights reserved.

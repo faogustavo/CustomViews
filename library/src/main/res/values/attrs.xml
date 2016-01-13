@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <declare-styleable name="SquareRelativeLayout">
+    <declare-styleable name="SquareLayout">
         <attr name="base" format="enum">
             <enum name="height" value="0" />
             <enum name="width" value="1" />
         </attr>
     </declare-styleable>
-    <declare-styleable name="ScaledRelativeLayout">
+    <declare-styleable name="ScaledLayout">
         <attr name="scaleBase" format="enum">
             <enum name="height" value="0" />
             <enum name="width" value="1" />

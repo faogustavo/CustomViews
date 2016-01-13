@@ -4,20 +4,20 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.util.AttributeSet;
-import android.widget.RelativeLayout;
+import android.widget.FrameLayout;
 
-public class ScaledRelativeLayout extends RelativeLayout {
+public class ScaledFrameLayout extends FrameLayout {
 
     private int base;
     private int width;
     private int height;
 
-    public ScaledRelativeLayout(Context context, AttributeSet attrs) {
+    public ScaledFrameLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.init(context, attrs);
     }
 
-    public ScaledRelativeLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+    public ScaledFrameLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         this.init(context, attrs);
     }
