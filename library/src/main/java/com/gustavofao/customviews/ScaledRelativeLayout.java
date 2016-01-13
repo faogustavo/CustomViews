@@ -12,10 +12,6 @@ public class ScaledRelativeLayout extends RelativeLayout {
     private int width;
     private int height;
 
-    public ScaledRelativeLayout(Context context) {
-        super(context);
-    }
-
     public ScaledRelativeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.init(context, attrs);
@@ -52,15 +48,18 @@ public class ScaledRelativeLayout extends RelativeLayout {
         if (base == 0) {
             height = heightSize;
             width = (int)((height * 1.0 / this.height) * this.width);
+
+            heightMeasureSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
+            widthMeasureSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY);
         } else if (base == 1) {
             width = widthSize;
             height = (int)((width * 1.0 / this.width) * this.height);
-        } else {
-            super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-            return;
+
+            heightMeasureSpec = MeasureSpec.makeMeasureSpec(height, MeasureSpec.EXACTLY);
+            widthMeasureSpec = MeasureSpec.makeMeasureSpec(width, MeasureSpec.EXACTLY);
         }
 
-        setMeasuredDimension(width, height);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
     }
 
     @Override

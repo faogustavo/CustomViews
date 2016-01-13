@@ -10,10 +10,6 @@ public class SquareRelativeLayout extends RelativeLayout {
 
     private int base;
 
-    public SquareRelativeLayout(Context context) {
-        super(context);
-    }
-
     public SquareRelativeLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.init(context, attrs);

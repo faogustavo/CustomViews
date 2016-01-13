@@ -18,23 +18,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/colorPrimaryDark"
-                custom:base="width"/>
+                android:layout_margin="16dp"
+                custom:base="width">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="SquareView"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </com.gustavofao.customviews.SquareRelativeLayout>
 
             <com.gustavofao.customviews.ScaledRelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:layout_margin="16dp"
                 custom:base="width"
                 custom:heightScale="9"
-                custom:widthScale="16"
-                android:background="@color/colorAccent"/>
+                custom:widthScale="16">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="16:9 scale"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </com.gustavofao.customviews.ScaledRelativeLayout>
 
             <com.gustavofao.customviews.ScaledRelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:layout_margin="16dp"
                 custom:base="width"
                 custom:heightScale="3"
-                custom:widthScale="4"
-                android:background="@color/colorPrimary"/>
+                custom:widthScale="4">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="3:4 scale"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"/>
+            </com.gustavofao.customviews.ScaledRelativeLayout>
         </LinearLayout>
     </ScrollView>
 
