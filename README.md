@@ -61,6 +61,7 @@ This library test can be found on [this link](https://github.com/faogustavo/Cust
 ## UPDATES
 ### 1.0
 - Project start with SquareRelativeLayout and ScaledRelativeLayout.
+
 ### 1.1
 - Added SquareFrameLayout and ScaledFrameLayout.
 
